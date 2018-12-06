@@ -20,7 +20,7 @@
 		   
 		     steps {
 			    
-				 sh """ docker build -t nsunil206/mynginx . """
+				 sh """ docker build -t nsunil206/mynginx1 . """
 				 
 				 }
 		}
@@ -32,7 +32,7 @@
 					
 					sh """
 					      docker login --username $USERNAME --password $PASSWORD
-						  docker push nsunil206/httpd
+						  docker push nsunil206/mynginx1
 					   """  
 			  }
         } 
